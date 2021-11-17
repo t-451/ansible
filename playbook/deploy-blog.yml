@@ -1,0 +1,8 @@
+---
+- hosts: lolipop
+
+  tasks:
+    - name: deploy blog to lolipop
+      synchronize:
+        src: /home/t451/ghq/github.com/t-451/blog/451.today/public/
+        dest: web/blog/451.today
