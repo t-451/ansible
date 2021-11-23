@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: pkg install
+      apt: 
+        name:
+          - git
+          - build-essential
+          - curl
+          - vim
+          - tig
+          - manpages-ja
+          - manpages-ja-dev
+          - gnome-tweaks
+          - virtualbox
+          - vagrant
+          - tilix
+          - copyq
+          - copyq-plugins
+          - xclip
+        state: latest
