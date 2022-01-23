@@ -4,5 +4,10 @@
   tasks:
     - name: deploy blog to lolipop
       synchronize:
-        src: /home/t451/ghq/github.com/t-451/blog/451.today/public/
+        src: /home/t451/ghq/github.com/t-451/blog/public/
         dest: web/blog/451.today
+
+    - name: deploy techblog to lolipop
+      synchronize:
+        src: /home/t451/ghq/github.com/t-451/techblog/tshu1.jp/public/
+        dest: web/techblog/tshu1.jp
